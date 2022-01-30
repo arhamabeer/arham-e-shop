@@ -1,0 +1,40 @@
+{
+  "name": "e-shop-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd public && npm start",
+    "server": "nodemon server",
+    "start": "node server",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix public && npm run build --prefix public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izaanjahangir/E-shop-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/izaanjahangir/E-shop-nodejs/issues"
+  },
+  "homepage": "https://github.com/izaanjahangir/E-shop-nodejs#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.11",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.2",
+    "stripe": "^7.9.1"
+  }
+}

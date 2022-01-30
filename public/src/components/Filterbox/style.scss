@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+
+#filter-box {
+  padding: $smallPadding;
+  font-size: 14px;
+}
+
+#filter-box .price-slider-labels {
+  font-size: 1em;
+}
+
+#filter-box form input, #filter-box form select {
+  font-size: 1em;
+}

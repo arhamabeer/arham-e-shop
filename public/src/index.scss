@@ -1,0 +1,66 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+// .container {
+//   max-width: initial;
+// }
+
+.pointer {
+  cursor: pointer;
+}
+
+.branding-name,
+.branding-name:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.auth-addon-icon {
+  color: $lightGrey;
+  position: relative;
+  transition: all 500ms ease;
+  left: 0;
+}
+
+.auth-addon-icon.active {
+  color: $iconActive;
+  left: -5px;
+}
+
+.auth-profile-picture {
+  width: 150px;
+  border-radius: 100%;
+}
+
+.link,
+.link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.gender-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.avatar-option {
+  width: 70px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.avatar-option.active {
+  border: 5px solid white;
+}

@@ -1,0 +1,43 @@
+// Google fonts
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap"); //Montserrat
+
+// Breakpoints
+$mediumBreakpoint: 991px;
+$smallBreakpoint: 767px;
+$extraSmallBreakpoint: 575px;
+
+// Radius
+$largeRadius: 1.5em;
+
+// Padding
+$largePadding: 5em;
+$mediumPadding: 3em;
+$smallPadding: 1.5em;
+$extraSmallPadding: 0.5em;
+
+// Margin
+$largeMargin: 5em;
+$mediumMargin: 3em;
+$smallMargin: 1.5em;
+$extraSmallMargin: 0.5em;
+
+// Font Size
+$extraLargeFont: 4.3em;
+$largeFont: 3em;
+
+// Colors
+$lightGrey: rgba(174, 174, 174, 1);
+$black: #333333;
+$blackOverlay: rgba(0, 0, 0, 0.6);
+$iconActive: #00c6fb;
+$danger: #dc3545;
+$light: #f8f9fa;
+$primary: #007bff;
+$success: #28a745;
+
+// Gradients
+$authBackgroundColor: linear-gradient(
+  to bottom,
+  rgba(0, 91, 234, 0.85),
+  rgba(0, 198, 251, 0.85)
+);

@@ -1,0 +1,142 @@
+@import "../../variables.scss";
+
+#custom-header {
+  position: relative;
+  z-index: 2;
+}
+
+#custom-header #auth-container {
+  min-height: 45px;
+  background: $success;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: $extraSmallPadding $mediumPadding;
+  font-size: 14px;
+}
+
+#custom-header #auth-container .dropdown-user > p {
+  margin: 0;
+  margin-top: $extraSmallMargin;
+}
+
+#custom-header #auth-container .dropdown-user > p > a,
+#custom-header #auth-container .dropdown-user > p > a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#custom-header #auth-container .login-user {
+  cursor: pointer;
+  position: relative;
+  padding: $extraSmallPadding;
+}
+
+#custom-header #auth-container .arrow-down {
+  color: white;
+  font-size: 20px;
+  margin-left: $extraSmallMargin;
+}
+
+#custom-header #auth-container > p > a,
+#custom-header #auth-container > p > a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#custom-header #auth-container > p {
+  margin: 0;
+  text-align: right;
+}
+
+.header-brand,
+.header-brand:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#custom-header-container {
+  display: flex;
+  justify-content: space-between;
+  background: $black;
+  padding: $extraSmallPadding $mediumPadding;
+  color: white;
+  align-items: center;
+  min-height: 50px;
+  font-size: 12px;
+}
+
+#custom-header-container h3 {
+  padding: 0 $extraSmallPadding;
+  margin: 0;
+  font-size: 1.9em;
+}
+
+#custom-header-container form {
+  padding-right: $extraSmallPadding;
+  flex: 0.7;
+  min-width: 350px;
+  max-width: 600px;
+}
+
+#header-icons {
+  display: flex;
+  font-size: 16px;
+}
+
+#header-icons .count {
+  position: absolute;
+  right: -3px;
+  top: 0;
+  background: $danger;
+  font-size: 0.5em;
+  border-radius: 100%;
+}
+
+#header-icons div {
+  padding: 0 $extraSmallPadding;
+}
+
+#header-icons p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+#header-icon .heart-icon,
+#header-icon .cart-icon {
+  font-size: 1.5em;
+}
+
+@media (max-width: $smallBreakpoint) {
+  #custom-header-container {
+    flex-direction: column;
+  }
+
+  #custom-header-container h3 {
+    padding: 0;
+    padding-bottom: $extraSmallPadding;
+    margin-right: auto;
+  }
+
+  #custom-header-container form {
+    padding-right: 0;
+    width: 100%;
+    min-width: 350px;
+    max-width: initial;
+  }
+
+  #header-icons {
+    padding: 0;
+    margin-left: auto;
+    padding-top: $extraSmallPadding;
+  }
+}
+
+@media (max-width: $extraSmallBreakpoint) {
+  #custom-header-container {
+    padding: $extraSmallPadding;
+  }
+
+  #custom-header-container form {
+    min-width: initial;
+  }
+}
